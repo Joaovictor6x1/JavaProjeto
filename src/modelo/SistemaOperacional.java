@@ -1,6 +1,5 @@
 package modelo;
 
-// Nome do SO (ex: "Windows 10") e tipo (ex: 64, referente a bits).
 public class SistemaOperacional {
 
     private String nome;

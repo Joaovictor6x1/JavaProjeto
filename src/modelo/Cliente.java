@@ -1,10 +1,8 @@
 package modelo;
 
-// A associação "compra" do diagrama (Cliente -> 2..* Computador) vira, na prática,
-// um array de Computador + um contador, já que não podemos usar ArrayList.
 public class Cliente {
 
-    private static final int MAX_COMPRAS = 20; // tamanho fixo do "carrinho" do cliente
+    private static final int MAX_COMPRAS = 20;
 
     private String nome;
     private String cpf;
@@ -18,7 +16,6 @@ public class Cliente {
         this.quantidadeComprada = 0;
     }
 
-    // Não está no UML como método formal, mas é o jeito de "realizar" a associação compra.
     public void comprarComputador(Computador computador) {
         if (quantidadeComprada < MAX_COMPRAS) {
             computadoresComprados[quantidadeComprada] = computador;

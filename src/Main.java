@@ -81,7 +81,7 @@ public class Main {
         entrada.close();
 
         //Resumo da compra
-        System.out.println("\n----- Resumo da Compra -----");
+        System.out.println("\n Resumo da Compra -----");
         System.out.println("Cliente: " + cliente.getNome());
         System.out.println("CPF: " + cliente.getCpf());
         System.out.println();
